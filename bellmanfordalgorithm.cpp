@@ -10,7 +10,7 @@ vector<int> bellmanFord(int V, vector<vector<int>>& edges, int src) {
                 int v=edge[1];
                 int w=edge[2];
                 
-                if(dist[u]!=1e8 && dist[u]+w < dist+[v])
+                if(dist[u]!=1e8 && dist[u]+w < dist[v])
                 {
                     if(i==V-1)
                     return {-1};
